@@ -110,10 +110,10 @@ const users = [
 
 // console.log(users[1].name)
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
 // output
 // { id: '6fd66ff', email: 'abhi', isloggedIn: false }
@@ -121,10 +121,30 @@ console.log(Object.entries(tinderUser));
 // [ '6fd66ff', 'abhi', false ]
 // [ [ 'id', '6fd66ff' ], [ 'email', 'abhi' ], [ 'isloggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('isloggedIn'));
+// console.log(tinderUser.hasOwnProperty('isloggedIn'));
 // output
 // true
 
+
+// How to de structure an object
+const course = {
+    coursename: "js",
+    price: "999",
+    courseInstructor: "Hites"
+}
+
+const {courseInstructor} = course
+console.log(courseInstructor);
+
+// API concept in javascript
+// json java objects notation
+// {
+//     "name":"Anant",
+//     "age":8,
+//     "city":"bhopal"
+// }
+
+// next functions and scopes
 
 
 
