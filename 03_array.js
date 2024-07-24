@@ -18,9 +18,9 @@ const cases = ["car","bike","bus","train"]
 //     '3', '4'
 //   ]
 
-// how to add two arrays using spred operator
+// how to add two arrays using spread operator
 
-const spredArray = [...alphabets, ...numbers, ...cases]
+const spreadArray = [...alphabets, ...numbers, ...cases]
 console.log(spredArray);
 
 // output
