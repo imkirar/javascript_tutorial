@@ -13,3 +13,8 @@ console.log("DB coonected");
 ((name)=>{
     console.log(`this is connected ${name}`)
 })("Anant bhai");
+
+
+(() => {
+    console.log(`this is connected`)
+})()
