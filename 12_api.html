@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="heading">API Reeuest</h2>
+    <h3 class="xmlhttps">XML HTTP REQUEST</h3>
+    <script>
+        const requestedUrl = 'https://api.github.com/users/hiteshchoudhary';
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', requestedUrl);
+        xhr.onreadystatechange = function(){
+            console.log(xhr.readyState);
+            if(xhr.readyState === 4 && xhr.status === 200)
+            {
+                console.log(JSON.parse(this.responseText).bio);
+                console.log(JSON.parse(this.responseText).followers);
+            }
+        }
+        xhr.send();
+        // console.log();
+    </script>
+</body>
+</html>
